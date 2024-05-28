@@ -1,0 +1,456 @@
+warning: The interpretation of store paths arguments ending in `.drv` recently changed. If this command is now failing try again with '/nix/store/qh7brwmhl404l5vv454i6zmz2gcps8cq-python3.11-h2-4.1.0.drv^*'
+got build log for '/nix/store/qh7brwmhl404l5vv454i6zmz2gcps8cq-python3.11-h2-4.1.0.drv' from 'daemon'
+Sourcing python-remove-tests-dir-hook
+Sourcing python-catch-conflicts-hook.sh
+Sourcing python-remove-bin-bytecode-hook.sh
+Sourcing setuptools-build-hook
+Using setuptoolsBuildPhase
+Sourcing pypa-install-hook
+Using pypaInstallPhase
+Sourcing python-imports-check-hook.sh
+Using pythonImportsCheckPhase
+Sourcing python-namespaces-hook
+Sourcing python-catch-conflicts-hook.sh
+Sourcing setuptools-check-hook
+Using setuptoolsCheckPhase
+Sourcing pytest-check-hook
+Using pytestCheckPhase
+Removing setuptoolsCheckPhase
+@nix { "action": "setPhase", "phase": "unpackPhase" }
+Running phase: unpackPhase
+unpacking source archive /nix/store/k6asfx1ckm2kbr0qgv24ylpdm9v4pvkk-h2-4.1.0.tar.gz
+source root is h2-4.1.0
+setting SOURCE_DATE_EPOCH to timestamp 1633458442 of file h2-4.1.0/setup.cfg
+@nix { "action": "setPhase", "phase": "patchPhase" }
+Running phase: patchPhase
+applying patch /nix/store/avsk8z8lay4526draxn0h03wlcqvfd2h-fix-tests-in-python-3.11.patch
+patching file test/test_events.py
+@nix { "action": "setPhase", "phase": "updateAutotoolsGnuConfigScriptsPhase" }
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+@nix { "action": "setPhase", "phase": "configurePhase" }
+Running phase: configurePhase
+no configure script, doing nothing
+@nix { "action": "setPhase", "phase": "buildPhase" }
+Running phase: buildPhase
+Executing setuptoolsBuildPhase
+running bdist_wheel
+running build
+running build_py
+creating build
+creating build/lib
+creating build/lib/h2
+copying src/h2/stream.py -> build/lib/h2
+copying src/h2/exceptions.py -> build/lib/h2
+copying src/h2/__init__.py -> build/lib/h2
+copying src/h2/events.py -> build/lib/h2
+copying src/h2/errors.py -> build/lib/h2
+copying src/h2/windows.py -> build/lib/h2
+copying src/h2/utilities.py -> build/lib/h2
+copying src/h2/frame_buffer.py -> build/lib/h2
+copying src/h2/connection.py -> build/lib/h2
+copying src/h2/config.py -> build/lib/h2
+copying src/h2/settings.py -> build/lib/h2
+/nix/store/7lgya4jsqx214n39nkf7ay7nz5r2iygf-python3.11-setuptools-69.5.1/lib/python3.11/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/h2
+copying build/lib/h2/stream.py -> build/bdist.linux-x86_64/wheel/h2
+copying build/lib/h2/exceptions.py -> build/bdist.linux-x86_64/wheel/h2
+copying build/lib/h2/__init__.py -> build/bdist.linux-x86_64/wheel/h2
+copying build/lib/h2/events.py -> build/bdist.linux-x86_64/wheel/h2
+copying build/lib/h2/errors.py -> build/bdist.linux-x86_64/wheel/h2
+copying build/lib/h2/windows.py -> build/bdist.linux-x86_64/wheel/h2
+copying build/lib/h2/utilities.py -> build/bdist.linux-x86_64/wheel/h2
+copying build/lib/h2/frame_buffer.py -> build/bdist.linux-x86_64/wheel/h2
+copying build/lib/h2/connection.py -> build/bdist.linux-x86_64/wheel/h2
+copying build/lib/h2/config.py -> build/bdist.linux-x86_64/wheel/h2
+copying build/lib/h2/settings.py -> build/bdist.linux-x86_64/wheel/h2
+running install_egg_info
+running egg_info
+writing src/h2.egg-info/PKG-INFO
+writing dependency_links to src/h2.egg-info/dependency_links.txt
+writing requirements to src/h2.egg-info/requires.txt
+writing top-level names to src/h2.egg-info/top_level.txt
+reading manifest file 'src/h2.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+no previously-included directories found matching 'docs/build'
+warning: no previously-included files matching '*.pyc' found anywhere in distribution
+warning: no previously-included files matching '*.pyo' found anywhere in distribution
+warning: no previously-included files matching '*.swo' found anywhere in distribution
+warning: no previously-included files matching '*.swp' found anywhere in distribution
+warning: no previously-included files matching '*.map' found anywhere in distribution
+warning: no previously-included files matching '*.yml' found anywhere in distribution
+warning: no previously-included files matching '*.DS_Store' found anywhere in distribution
+adding license file 'LICENSE'
+writing manifest file 'src/h2.egg-info/SOURCES.txt'
+Copying src/h2.egg-info to build/bdist.linux-x86_64/wheel/h2-4.1.0-py3.11.egg-info
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/h2-4.1.0.dist-info/WHEEL
+creating 'dist/h2-4.1.0-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'h2/__init__.py'
+adding 'h2/config.py'
+adding 'h2/connection.py'
+adding 'h2/errors.py'
+adding 'h2/events.py'
+adding 'h2/exceptions.py'
+adding 'h2/frame_buffer.py'
+adding 'h2/settings.py'
+adding 'h2/stream.py'
+adding 'h2/utilities.py'
+adding 'h2/windows.py'
+adding 'h2-4.1.0.dist-info/LICENSE'
+adding 'h2-4.1.0.dist-info/METADATA'
+adding 'h2-4.1.0.dist-info/WHEEL'
+adding 'h2-4.1.0.dist-info/top_level.txt'
+adding 'h2-4.1.0.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+Finished executing setuptoolsBuildPhase
+@nix { "action": "setPhase", "phase": "installPhase" }
+Running phase: installPhase
+Executing pypaInstallPhase
+Successfully installed h2-4.1.0-py3-none-any.whl
+Finished executing pypaInstallPhase
+@nix { "action": "setPhase", "phase": "pythonOutputDistPhase" }
+Running phase: pythonOutputDistPhase
+Executing pythonOutputDistPhase
+Finished executing pythonOutputDistPhase
+@nix { "action": "setPhase", "phase": "fixupPhase" }
+Running phase: fixupPhase
+shrinking RPATHs of ELF executables and libraries in /nix/store/b4wc9wab10q50wi47av6rh7xqrskvsv8-python3.11-h2-4.1.0
+checking for references to /build/ in /nix/store/b4wc9wab10q50wi47av6rh7xqrskvsv8-python3.11-h2-4.1.0...
+patching script interpreter paths in /nix/store/b4wc9wab10q50wi47av6rh7xqrskvsv8-python3.11-h2-4.1.0
+stripping (with command strip and flags -S -p) in  /nix/store/b4wc9wab10q50wi47av6rh7xqrskvsv8-python3.11-h2-4.1.0/lib
+shrinking RPATHs of ELF executables and libraries in /nix/store/40qk1x0irqn9wvd694b5g5s8a51wqrrk-python3.11-h2-4.1.0-dist
+checking for references to /build/ in /nix/store/40qk1x0irqn9wvd694b5g5s8a51wqrrk-python3.11-h2-4.1.0-dist...
+patching script interpreter paths in /nix/store/40qk1x0irqn9wvd694b5g5s8a51wqrrk-python3.11-h2-4.1.0-dist
+Executing pythonRemoveTestsDir
+Finished executing pythonRemoveTestsDir
+@nix { "action": "setPhase", "phase": "installCheckPhase" }
+Running phase: installCheckPhase
+no Makefile or custom installCheckPhase, doing nothing
+@nix { "action": "setPhase", "phase": "pythonCatchConflictsPhase" }
+Running phase: pythonCatchConflictsPhase
+@nix { "action": "setPhase", "phase": "pythonRemoveBinBytecodePhase" }
+Running phase: pythonRemoveBinBytecodePhase
+@nix { "action": "setPhase", "phase": "pythonImportsCheckPhase" }
+Running phase: pythonImportsCheckPhase
+Executing pythonImportsCheckPhase
+Check whether the following modules can be imported: h2.connection h2.config
+@nix { "action": "setPhase", "phase": "pytestCheckPhase" }
+Running phase: pytestCheckPhase
+Executing pytestCheckPhase
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.11.9, pytest-8.1.1, pluggy-1.4.0
+rootdir: /build/h2-4.1.0
+configfile: setup.cfg
+testpaths: test
+plugins: hypothesis-6.100.1
+[1mcollecting ... [0m[1mcollecting 45 items                                                            [0m[1mcollecting 406 items                                                           [0m[1mcollecting 568 items                                                           [0m[1mcollecting 621 items                                                           [0m[1mcollecting 950 items                                                           [0m[1mcollecting 1337 items                                                          [0m[1mcollecting 1361 items                                                          [0m[1mcollected 1433 items / 1 deselected / 1432 selected                            [0m
+
+test/test_basic_logic.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [  3%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [  8%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [ 13%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [ 18%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [ 23%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                         [ 26%][0m
+test/test_closed_streams.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                        [ 28%][0m
+test/test_complex_logic.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                             [ 29%][0m
+test/test_config.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [ 33%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                                                           [ 34%][0m
+test/test_events.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m         [ 37%][0m
+test/test_exceptions.py [32m.[0m[32m                                                [ 37%][0m
+test/test_flow_control_window.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [ 39%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31mF[0m[32m.[0m[31m                                                                   [ 40%][0m
+test/test_h2_upgrade.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m                                    [ 41%][0m
+test/test_head_request.py [32m.[0m[32m.[0m[31m                                             [ 41%][0m
+test/test_header_indexing.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m [ 44%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m [ 49%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m [ 54%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m [ 59%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m                                [ 62%][0m
+test/test_informational_responses.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m      [ 64%][0m
+test/test_interacting_stacks.py [32m.[0m[31m                                        [ 64%][0m
+test/test_invalid_content_lengths.py [32m.[0m[32m.[0m[32m.[0m[31m                                 [ 64%][0m
+test/test_invalid_frame_sequences.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m             [ 66%][0m
+test/test_invalid_headers.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m [ 69%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m [ 74%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m [ 79%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m [ 84%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m [ 89%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m                                        [ 91%][0m
+test/test_priority.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m                            [ 93%][0m
+test/test_related_events.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m                                [ 94%][0m
+test/test_rfc7838.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m                                 [ 95%][0m
+test/test_rfc8441.py [32m.[0m[31m                                                   [ 95%][0m
+test/test_settings.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m                   [ 97%][0m
+test/test_state_machines.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m                           [ 99%][0m
+test/test_stream_reset.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m                                          [ 99%][0m
+test/test_utility_functions.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m                                  [100%][0m
+
+=================================== FAILURES ===================================
+[31m[1m_____________ TestAutomaticFlowControl.test_connection_only_empty ______________[0m
+
+self = <test.test_flow_control_window.TestAutomaticFlowControl object at 0x7ffff4e5cd90>
+frame_factory = <test.helpers.FrameFactory object at 0x7ffff44fd050>
+increment = 9197
+
+    @given(integers(min_value=1025, max_value=(DEFAULT_FLOW_WINDOW // 4) - 1))
+>   @settings(suppress_health_check=[HealthCheck.function_scoped_fixture])
+
+[1m[31mtest/test_flow_control_window.py[0m:879: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+args = (<test.test_flow_control_window.TestAutomaticFlowControl object at 0x7ffff4e5cd90>, <test.helpers.FrameFactory object at 0x7ffff44fd050>, 9197)
+kwargs = {}, arg_drawtime = 0.0001785850035957992, start = 479152.913898933
+result = None, finish = 479153.197251299, in_drawtime = 0.0
+runtime = datetime.timedelta(microseconds=283352)
+current_deadline = datetime.timedelta(microseconds=250000)
+
+    @proxies(self.test)
+    def test(*args, **kwargs):
+        arg_drawtime = math.fsum(data.draw_times.values())
+        start = time.perf_counter()
+        try:
+            result = self.test(*args, **kwargs)
+        finally:
+            finish = time.perf_counter()
+            in_drawtime = math.fsum(data.draw_times.values()) - arg_drawtime
+            runtime = datetime.timedelta(seconds=finish - start - in_drawtime)
+            self._timing_features = {
+                "execute:test": finish - start - in_drawtime,
+                **data.draw_times,
+                **data._stateful_run_times,
+            }
+    
+        if (current_deadline := self.settings.deadline) is not None:
+            if not is_final:
+                current_deadline = (current_deadline // 4) * 5
+            if runtime >= current_deadline:
+>               raise DeadlineExceeded(runtime, self.settings.deadline)
+[1m[31mE               hypothesis.errors.DeadlineExceeded: Test took 283.35ms, which exceeds the deadline of 200.00ms[0m
+
+[1m[31m/nix/store/6v95kxhbaaa8wnylswxpbpavp94lvl3n-python3.11-hypothesis-6.100.1/lib/python3.11/site-packages/hypothesis/core.py[0m:846: DeadlineExceeded
+
+[33mThe above exception was the direct cause of the following exception:[0m
+
+self = <test.test_flow_control_window.TestAutomaticFlowControl object at 0x7ffff4e5cd90>
+frame_factory = <test.helpers.FrameFactory object at 0x7ffff44fd050>
+
+    @given(integers(min_value=1025, max_value=(DEFAULT_FLOW_WINDOW // 4) - 1))
+>   @settings(suppress_health_check=[HealthCheck.function_scoped_fixture])
+
+[1m[31mtest/test_flow_control_window.py[0m:879: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <hypothesis.core.StateForActualGivenExecution object at 0x7ffff44d0a10>
+data = ConjectureData(VALID, 3 bytes, frozen)
+
+    def execute_once(
+        self,
+        data,
+        *,
+        print_example=False,
+        is_final=False,
+        expected_failure=None,
+        example_kwargs=None,
+    ):
+        """Run the test function once, using ``data`` as input.
+    
+        If the test raises an exception, it will propagate through to the
+        caller of this method. Depending on its type, this could represent
+        an ordinary test failure, or a fatal error, or a control exception.
+    
+        If this method returns normally, the test might have passed, or
+        it might have placed ``data`` in an unsuccessful state and then
+        swallowed the corresponding control exception.
+        """
+    
+        self.ever_executed = True
+        data.is_find = self.is_find
+    
+        self._string_repr = ""
+        text_repr = None
+        if self.settings.deadline is None and not TESTCASE_CALLBACKS:
+            test = self.test
+        else:
+    
+            @proxies(self.test)
+            def test(*args, **kwargs):
+                arg_drawtime = math.fsum(data.draw_times.values())
+                start = time.perf_counter()
+                try:
+                    result = self.test(*args, **kwargs)
+                finally:
+                    finish = time.perf_counter()
+                    in_drawtime = math.fsum(data.draw_times.values()) - arg_drawtime
+                    runtime = datetime.timedelta(seconds=finish - start - in_drawtime)
+                    self._timing_features = {
+                        "execute:test": finish - start - in_drawtime,
+                        **data.draw_times,
+                        **data._stateful_run_times,
+                    }
+    
+                if (current_deadline := self.settings.deadline) is not None:
+                    if not is_final:
+                        current_deadline = (current_deadline // 4) * 5
+                    if runtime >= current_deadline:
+                        raise DeadlineExceeded(runtime, self.settings.deadline)
+                return result
+    
+        def run(data):
+            # Set up dynamic context needed by a single test run.
+            if self.stuff.selfy is not None:
+                data.hypothesis_runner = self.stuff.selfy
+            # Generate all arguments to the test function.
+            args = self.stuff.args
+            kwargs = dict(self.stuff.kwargs)
+            if example_kwargs is None:
+                kw, argslices = context.prep_args_kwargs_from_strategies(
+                    self.stuff.given_kwargs
+                )
+            else:
+                kw = example_kwargs
+                argslices = {}
+            kwargs.update(kw)
+            if expected_failure is not None:
+                nonlocal text_repr
+                text_repr = repr_call(test, args, kwargs)
+                if text_repr in self.xfail_example_reprs:
+                    warnings.warn(
+                        f"We generated {text_repr}, which seems identical "
+                        "to one of your `@example(...).xfail()` cases.  "
+                        "Revise the strategy to avoid this overlap?",
+                        HypothesisWarning,
+                        # Checked in test_generating_xfailed_examples_warns!
+                        stacklevel=6,
+                    )
+    
+            if print_example or current_verbosity() >= Verbosity.verbose:
+                printer = RepresentationPrinter(context=context)
+                if print_example:
+                    printer.text("Falsifying example:")
+                else:
+                    printer.text("Trying example:")
+    
+                if self.print_given_args:
+                    printer.text(" ")
+                    printer.repr_call(
+                        test.__name__,
+                        args,
+                        kwargs,
+                        force_split=True,
+                        arg_slices=argslices,
+                        leading_comment=(
+                            "# " + context.data.slice_comments[(0, 0)]
+                            if (0, 0) in context.data.slice_comments
+                            else None
+                        ),
+                    )
+                report(printer.getvalue())
+    
+            if TESTCASE_CALLBACKS:
+                printer = RepresentationPrinter(context=context)
+                printer.repr_call(
+                    test.__name__,
+                    args,
+                    kwargs,
+                    force_split=True,
+                    arg_slices=argslices,
+                    leading_comment=(
+                        "# " + context.data.slice_comments[(0, 0)]
+                        if (0, 0) in context.data.slice_comments
+                        else None
+                    ),
+                )
+                self._string_repr = printer.getvalue()
+                data._observability_arguments = {
+                    **dict(enumerate(map(to_jsonable, args))),
+                    **{k: to_jsonable(v) for k, v in kwargs.items()},
+                }
+    
+            try:
+                return test(*args, **kwargs)
+            except TypeError as e:
+                # If we sampled from a sequence of strategies, AND failed with a
+                # TypeError, *AND that exception mentions SearchStrategy*, add a note:
+                if "SearchStrategy" in str(e) and hasattr(
+                    data, "_sampled_from_all_strategies_elements_message"
+                ):
+                    msg, format_arg = data._sampled_from_all_strategies_elements_message
+                    add_note(e, msg.format(format_arg))
+                raise
+            finally:
+                if parts := getattr(data, "_stateful_repr_parts", None):
+                    self._string_repr = "\n".join(parts)
+    
+        # self.test_runner can include the execute_example method, or setup/teardown
+        # _example, so it's important to get the PRNG and build context in place first.
+        with local_settings(self.settings):
+            with deterministic_PRNG():
+                with BuildContext(data, is_final=is_final) as context:
+                    # providers may throw in per_case_context_fn, and we'd like
+                    # `result` to still be set in these cases.
+                    result = None
+                    with data.provider.per_test_case_context_manager():
+                        # Run the test function once, via the executor hook.
+                        # In most cases this will delegate straight to `run(data)`.
+                        result = self.test_runner(data, run)
+    
+        # If a failure was expected, it should have been raised already, so
+        # instead raise an appropriate diagnostic error.
+        if expected_failure is not None:
+            exception, traceback = expected_failure
+            if isinstance(exception, DeadlineExceeded) and (
+                runtime_secs := math.fsum(
+                    v
+                    for k, v in self._timing_features.items()
+                    if k.startswith("execute:")
+                )
+            ):
+                report(
+                    "Unreliable test timings! On an initial run, this "
+                    "test took %.2fms, which exceeded the deadline of "
+                    "%.2fms, but on a subsequent run it took %.2f ms, "
+                    "which did not. If you expect this sort of "
+                    "variability in your test timings, consider turning "
+                    "deadlines off for this test by setting deadline=None."
+                    % (
+                        exception.runtime.total_seconds() * 1000,
+                        self.settings.deadline.total_seconds() * 1000,
+                        runtime_secs * 1000,
+                    )
+                )
+            else:
+                report("Failed to reproduce exception. Expected: \n" + traceback)
+>           raise Flaky(
+                f"Hypothesis {text_repr} produces unreliable results: "
+                "Falsified on the first call but did not on a subsequent one"
+            ) from exception
+[1m[31mE           hypothesis.errors.Flaky: Hypothesis test_connection_only_empty(self=<test.test_flow_control_window.TestAutomaticFlowControl object at 0x7ffff4e5cd90>, frame_factory=<test.helpers.FrameFactory object at 0x7ffff44fd050>, increment=9197) produces unreliable results: Falsified on the first call but did not on a subsequent one[0m
+[1m[31mE           Falsifying example: test_connection_only_empty([0m
+[1m[31mE               self=<test.test_flow_control_window.TestAutomaticFlowControl object at 0x7ffff4e5cd90>,[0m
+[1m[31mE               frame_factory=<test.helpers.FrameFactory object at 0x7ffff44fd050>,[0m
+[1m[31mE               increment=9197,[0m
+[1m[31mE           )[0m
+[1m[31mE           Unreliable test timings! On an initial run, this test took 283.35ms, which exceeded the deadline of 200.00ms, but on a subsequent run it took 1.90 ms, which did not. If you expect this sort of variability in your test timings, consider turning deadlines off for this test by setting deadline=None.[0m
+
+[1m[31m/nix/store/6v95kxhbaaa8wnylswxpbpavp94lvl3n-python3.11-hypothesis-6.100.1/lib/python3.11/site-packages/hypothesis/core.py[0m:974: Flaky
+[36m[1m=========================== short test summary info ============================[0m
+[31mFAILED[0m test/test_flow_control_window.py::[1mTestAutomaticFlowControl::test_connection_only_empty[0m - hypothesis.errors.Flaky: Hypothesis test_connection_only_empty(self=<test.t...
+[31m=========== [31m[1m1 failed[0m, [32m1431 passed[0m, [33m1 deselected[0m[31m in 161.87s (0:02:41)[0m[31m ===========[0m
+/nix/store/ivdsdpb8fkpsi9qs3408ay26sn8lm3b1-stdenv-linux/setup: line 1579: pop_var_context: head of shell_variables not a function context
